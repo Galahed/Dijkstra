@@ -1,13 +1,19 @@
 {
   "dependencies": {
-    "express": "^4.16.4"
+    "algorithms": "^0.10.0",
+    "express": "^4.16.4",
+    "moleculer": "^0.13.8",
+    "moleculer-web": "^0.8.5"
   },
   "name": "Dijkstra",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node server.js"
+    "start_express": "node express.js",
+    "start_broker": "node broker.js",
+    "start_express_broker": "node express_broker.js",
+    "start_cli": "node cli.js"
   },
   "keywords": [],
   "author": "",
