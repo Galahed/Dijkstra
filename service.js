@@ -1,5 +1,4 @@
 module.exports=(req,res)=>{
-console.log(req,res,process.argv)
 
   //Граф задан как набор дуг,связный,двунаправленный
   //Graph formed as set of edges, it is connected and undirected

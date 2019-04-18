@@ -1,5 +1,5 @@
 const express=require('express')
 const service=require('./service')
 const app=express()
-app.get('/service',service)
+app.get('/api/dijkstra/calc',service)
 app.listen(80)
