@@ -3,7 +3,7 @@
 > GNU license
 ---
 ### Description
-Solving Shortest Path Problem: Dijkstra’s Algorithm
+Solving Shortest Path Problem: Dijkstra’s Algorithm  
 ![Graph](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
 
 ---
@@ -29,9 +29,11 @@ http://127.0.0.1:8000/api/dijkstra/calc?start=1
 npm run start_cli -- 1  
 ---
 ## Result
+```
 {"paths":[null,null,[1,2],[1,3],[1,3,4],[1,3,6,5],[1,3,6]]}
+```
 ---
 ## Author
-Dmitriy Klimov
+* Dmitriy Klimov
 ---
 ## Best regards!
