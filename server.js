@@ -1,0 +1,5 @@
+const express=require('express')
+const service=require('./service')
+const app=express()
+app.get('/service',service)
+app.listen(80)
