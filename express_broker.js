@@ -30,7 +30,7 @@ const app = express();
 app.use("/api", svc.express());
 
 // Listening
-app.listen(3000);
+app.listen(8000);
 
 // Start server
 broker.start();
