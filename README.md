@@ -39,7 +39,7 @@ npm run start_cli -- 1
 ## Best regards!
 ---
 ## Whats new in version 1.1.0?
-One more imlpementation for cli-run in hackathon-style
+One more implementation for cli-run in hackathon-style
 * Run  
 >node matrix 1  
 * Result  
