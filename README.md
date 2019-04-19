@@ -3,7 +3,7 @@
 > GNU license
 ---
 ### Description
-Solving Shortest Path Problem: Dijkstra’s Algorithm  
+Solving Shortest Path Problem: [Dijkstra’s Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 ![Graph](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
 
 ---
@@ -37,3 +37,29 @@ npm run start_cli -- 1
 * Dmitriy Klimov
 ---
 ## Best regards!
+---
+## Whats new in version 1.1.0?
+One more imlpementation for cli-run in hackathon-style
+* Run  
+>node matrix 1  
+* Result  
+>[ [ 1, 2 ], [ 1, 3 ], [ 1, 3, 4 ], [ 1, 3, 6, 5 ], [ 1, 3, 6 ] ]  
+
+* Few code, better algorithm, but lack of comments and userfriendly-namespace
+```JS
+let a=[,[,,7,9,,,14],[,7,,10,15],[,9,10,,11,,2],[,,15,11,,6],[,,,,6,,9],[,14,,2,,9]],
+    b=[],v=[],s=[]
+b[process.argv.slice(-1)[0]*1||1]=0
+do{
+ let u=b.map((bb,i)=>s[i]?NaN:bb)
+ let n=u.indexOf(Math.min(...u.filter(a=>a>-1)))
+ s[n]=1
+ b=Array.apply(null,Array(a.length))
+        .map((aa,i)=>(
+           a[n][i]&&(!(b[i]>-1)||b[n]+a[n][i]<b[i])?
+           (v[i]=(v[n]||[n]).concat(i))&&(b[n]+a[n][i]):
+           b[i]
+        ))
+}while(a.length!==s.length)
+console.log(v.filter(a=>a))
+```

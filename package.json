@@ -6,7 +6,7 @@
     "moleculer-web": "^0.8.5"
   },
   "name": "Dijkstra",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {

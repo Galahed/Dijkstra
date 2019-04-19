@@ -26,7 +26,7 @@ module.exports=(req,res)=>{
     graph[a][b]=graph[b][a]=route.weight //граф двунаправленный,неориентированный
                                          //graph duplex,undirected
   })
-
+  console.log(JSON.stringify(Object.keys(graph).map(key=>(graph[key].map(a=>(1))))))
   //традиционный алгоритм с небольшим дополнением в виде сохранения путей
   //traditional algorithm with some additional case collect of paths to each vertex
   const start=req.query.start*1
